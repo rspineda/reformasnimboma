@@ -23,10 +23,10 @@ function styles() {
     .pipe($.postcss([
       autoprefixer()
     ]))
-    .pipe(dest('.tmp/styles', {
+    .pipe(dest('dist/styles', {
       sourcemaps: !isProd,
     }))
-    .pipe(server.reload({stream: true}));
+    .pipe(server.reload({stream: true}) );
 };
 
 function scripts() {
@@ -35,9 +35,9 @@ function scripts() {
   })
     .pipe($.plumber())
     .pipe($.babel())
-    .pipe(dest('.tmp/scripts', {
+    .pipe(dest('dist/scripts', {
       sourcemaps: !isProd ? '.' : false,
-    }))
+    }) )
     .pipe(server.reload({stream: true}));
 };
 
