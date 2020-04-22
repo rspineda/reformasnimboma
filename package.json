@@ -40,8 +40,10 @@
     "start": "gulp serve",
     "build": "cross-env NODE_ENV=production gulp",
     "test": "npm run serve:test",
-    "tasks": "gulp --tasks"
+    "tasks": "gulp --tasks",
+    "deploy": "gh-pages -d dist"
   },
+  "homepage": "https://rspineda.github.io/reformasnimboma",
 
   "browserslist": [
     "> 1%",
