@@ -6,6 +6,7 @@
   "dependencies": {
     "bootstrap": "^4.3.1",
     "jquery": "^3.4.1",
+    "lodash": "^4.17.19",
     "popper.js": "^1.15.0"
   },
   "devDependencies": {
@@ -43,8 +44,7 @@
     "tasks": "gulp --tasks",
     "deploy": "gh-pages -d dist"
   },
-  "homepage": "https://rspineda.github.io/reformasnimboma/",
-
+  "homepage": "https://rspineda.github.io/reformasnimboma",
   "browserslist": [
     "> 1%",
     "last 2 versions",
